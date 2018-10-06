@@ -1,21 +1,61 @@
 /* AUTO GENERATED FILE. DO NOT MODIFY. YOU WILL LOSE YOUR CHANGES ON BUILD. */
 
 export namespace Images {
+    export class Baddie {
+        static getName(): string { return 'baddie'; }
+
+        static getPNG(): string { return require('assets/baddie.png'); }
+    }
+    export class Diamond {
+        static getName(): string { return 'diamond'; }
+
+        static getPNG(): string { return require('assets/diamond.png'); }
+    }
+    export class Firstaid {
+        static getName(): string { return 'firstaid'; }
+
+        static getPNG(): string { return require('assets/firstaid.png'); }
+    }
     export class ImagesBackgroundTemplate {
         static getName(): string { return 'background_template'; }
 
         static getPNG(): string { return require('assets/images/background_template.png'); }
     }
+    export class Platform {
+        static getName(): string { return 'platform'; }
+
+        static getPNG(): string { return require('assets/platform.png'); }
+    }
+    export class Sky {
+        static getName(): string { return 'sky'; }
+
+        static getPNG(): string { return require('assets/sky.png'); }
+    }
+    export class Star {
+        static getName(): string { return 'star'; }
+
+        static getPNG(): string { return require('assets/star.png'); }
+    }
 }
 
 export namespace Spritesheets {
-    export class SpritesheetsMetalslugMummy374518 {
-        static getName(): string { return 'metalslug_mummy.[37,45,18,0,0]'; }
+    export class SpritesheetsDude32481 {
+        static getName(): string { return 'dude.[32,48,-1,0,0]'; }
 
-        static getPNG(): string { return require('assets/spritesheets/metalslug_mummy.[37,45,18,0,0].png'); }
+        static getPNG(): string { return require('assets/spritesheets/dude.[32,48,-1,0,0].png'); }
+        static getFrameWidth(): number { return 32; }
+        static getFrameHeight(): number { return 48; }
+        static getFrameMax(): number { return -1; }
+        static getMargin(): number { return 0; }
+        static getSpacing(): number { return 0; }
+    }
+    export class SpritesheetsMetalslugMummy3745 {
+        static getName(): string { return 'metalslug_mummy.[37,45,0,0,0]'; }
+
+        static getPNG(): string { return require('assets/spritesheets/metalslug_mummy.[37,45,0,0,0].png'); }
         static getFrameWidth(): number { return 37; }
         static getFrameHeight(): number { return 45; }
-        static getFrameMax(): number { return 18; }
+        static getFrameMax(): number { return 0; }
         static getMargin(): number { return 0; }
         static getSpacing(): number { return 0; }
     }

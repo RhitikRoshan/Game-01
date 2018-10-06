@@ -4,9 +4,13 @@ import * as AssetUtils from '../utils/assetUtils';
 export default class Preloader extends Phaser.State {
     private preloadBarSprite: Phaser.Sprite = null;
     private preloadFrameSprite: Phaser.Sprite = null;
+    private americanFlag: Phaser.Sprite = null;
 
     public preload(): void {
         // Setup your loading screen and preload sprite (if you want a loading progress indicator) here
+
+        this.americanFlag = this.game.add.sprite(0, 0, Assets.Images.Star.getName());
+
 
         this.preloadBarSprite = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, Assets.Atlases.AtlasesPreloadSpritesArray.getName(), Assets.Atlases.AtlasesPreloadSpritesArray.Frames.PreloadBar);
         // this.preloadBarSprite = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, Assets.Atlases.AtlasesPreloadSpritesHash.getName(), Assets.Atlases.AtlasesPreloadSpritesHash.Frames.PreloadBar);

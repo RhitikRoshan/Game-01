@@ -1,10 +1,12 @@
 import * as Utils from '../utils/utils';
 import * as Assets from '../assets';
+import * as AssetUtils from '../utils/assetUtils';
 
 export default class Boot extends Phaser.State {
     public preload(): void {
         // Load any assets you need for your preloader state here.
         this.game.load.atlasJSONArray(Assets.Atlases.AtlasesPreloadSpritesArray.getName(), Assets.Atlases.AtlasesPreloadSpritesArray.getPNG(), Assets.Atlases.AtlasesPreloadSpritesArray.getJSONArray());
+        AssetUtils.Loader.loadAllAssets(this.game);
         // this.game.load.atlasJSONHash(Assets.Atlases.AtlasesPreloadSpritesHash.getName(), Assets.Atlases.AtlasesPreloadSpritesHash.getPNG(), Assets.Atlases.AtlasesPreloadSpritesHash.getJSONHash());
         // this.game.load.atlasXML(Assets.Atlases.AtlasesPreloadSpritesXml.getName(), Assets.Atlases.AtlasesPreloadSpritesXml.getPNG(), Assets.Atlases.AtlasesPreloadSpritesXml.getXML());
     }
